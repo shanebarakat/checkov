@@ -13,7 +13,7 @@ class TestCheckovCyclonedxReport(unittest.TestCase):
     def validate_report(self, report_path: str) -> None:
         with open(report_path) as cyclonedx_file:
             data = minidom.parse(cyclonedx_file)
-            self.validate_report_not_empty(data)
+            self.validate_report_not_empty(data) 
 
     def validate_report_not_empty(self, report):
         vulnrability_file = (
