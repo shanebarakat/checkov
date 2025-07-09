@@ -20,7 +20,7 @@ class TestCheckovCyclonedxReport(unittest.TestCase):
             report.getElementsByTagNameNS("*", "vulnerabilities")[0]
             .getElementsByTagNameNS("*", "vulnerability")[0]
             .getElementsByTagNameNS("*", "id")[0]
-            .firstChild.nodeValue
+            .firstChild.nodeValue 
         )
         self.assertTrue(vulnrability_file.startswith("CKV"))
 
